@@ -3,17 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>layout</title>
+    <link rel="stylesheet" href="">
+    <title>Document</title>
 </head>
 <body>
-    <div>
-        testte de funcionamento 
-        versionamento de codigo
-
-
-
+    <div id="conteudo">
     </div>
+
+    <script>
+        const titulo = "teste de qi"
+        const paragrafo1 = "vai estudar"
+        const paragrafo2 = "profundidade"
+
+        const h1 = document.createElement('h1')
+        h1.textContent = titulo;
+
+        const p1 = document.createElement('p')
+        p1.textContent = paragrafo1
+
+        const p2 = document.createElement('p')
+        p2.textContent = paragrafo2
+
+
+        //adicionar os elementos no conteudo div
+
+        const conteudo_div  = document.getElementById('conteudo')
+        conteudo_div.appendChild(h1)
+        conteudo_div.appendChild(p1)
+        conteudo_div.appendChild(p2)
+
+    </script>
     
 </body>
 </html>
